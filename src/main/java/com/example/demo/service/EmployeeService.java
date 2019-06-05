@@ -19,14 +19,18 @@ public class EmployeeService {
     
     
     public Collection<Employee> getEmployeeList() {
+    	System.out.println("get all employee");
         return employeeMap.values();
     }
     
     public Employee getEmployee(String employeeId) {
+    	System.out.println("get employee :: "+employeeId);
         return employeeMap.get(employeeId);
     }
 
     public Employee addEmployee(Employee employee) {
+    	System.out.println("Adding employee");
         return employeeMap.put(employee.getEmployeeId(), employee);
     }
+    
 }

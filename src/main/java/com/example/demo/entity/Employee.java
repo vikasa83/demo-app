@@ -1,69 +1,77 @@
 package com.example.demo.entity;
 
 public class Employee {
-    
-    private String name;
-    private String employeeId;
-    private String dept;
-    private String designation;
 
-    public Employee() {
-    }
+	private String name;
+	private String employeeId;
+	private String dept;
+	private String designation;
 
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
+	public Employee() {
+	}
 
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
+	public Employee(String name, String employeeId, String dept, String designation) {
+		super();
+		this.name = name;
+		this.employeeId = employeeId;
+		this.dept = dept;
+		this.designation = designation;
+	}
 
-    /**
-     * @return the employeeId
-     */
-    public String getEmployeeId() {
-        return employeeId;
-    }
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * @param employeeId the employeeId to set
-     */
-    public void setEmployeeId(String employeeId) {
-        this.employeeId = employeeId;
-    }
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    /**
-     * @return the dept
-     */
-    public String getDept() {
-        return dept;
-    }
+	/**
+	 * @return the employeeId
+	 */
+	public String getEmployeeId() {
+		return employeeId;
+	}
 
-    /**
-     * @param dept the dept to set
-     */
-    public void setDept(String dept) {
-        this.dept = dept;
-    }
+	/**
+	 * @param employeeId the employeeId to set
+	 */
+	public void setEmployeeId(String employeeId) {
+		this.employeeId = employeeId;
+	}
 
-    /**
-     * @return the designation
-     */
-    public String getDesignation() {
-        return designation;
-    }
+	/**
+	 * @return the dept
+	 */
+	public String getDept() {
+		return dept;
+	}
 
-    /**
-     * @param designation the designation to set
-     */
-    public void setDesignation(String designation) {
-        this.designation = designation;
-    }
+	/**
+	 * @param dept the dept to set
+	 */
+	public void setDept(String dept) {
+		this.dept = dept;
+	}
+
+	/**
+	 * @return the designation
+	 */
+	public String getDesignation() {
+		return designation;
+	}
+
+	/**
+	 * @param designation the designation to set
+	 */
+	public void setDesignation(String designation) {
+		this.designation = designation;
+	}
 
 }
